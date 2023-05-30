@@ -7,7 +7,7 @@ const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
   const [backgroundColor, setBackgroundColor] = useState('');
-
+//open weather api 
   const handleSearch = async () => {
     try {
       const response = await axios.get(
@@ -74,6 +74,7 @@ const WeatherApp = () => {
           <p className={styles.info}>
             Wind Speed: {weatherData.wind.speed} m/s
           </p>
+          
         </div>
       )}
     </div>
@@ -81,4 +82,3 @@ const WeatherApp = () => {
 };
 
 export default WeatherApp;
-
