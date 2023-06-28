@@ -1,8 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App from './App';  // The relative path might change according to your file structure
 
-test('renders learn react link', () => {
+test('renders WeatherApp component', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/Weather App/i)).toBeInTheDocument();
 });
