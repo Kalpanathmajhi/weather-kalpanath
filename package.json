@@ -1,3 +1,4 @@
+
 {
   "name": "weather-kalpanath",
   "version": "0.1.0",
@@ -44,8 +45,15 @@
     "babel-jest": "^29.5.0",
     "jest": "^27.5.1"
   },
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ]
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx)?$": "babel-jest"
+    }
+  }
 }
