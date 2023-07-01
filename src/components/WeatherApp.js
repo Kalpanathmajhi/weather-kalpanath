@@ -48,6 +48,7 @@ const WeatherApp = () => {
         <input
           type="text"
           value={city}
+          //to target the text in the search input
           onChange={(e) => setCity(e.target.value)}
           placeholder="Enter city name"
           className={styles.input}
